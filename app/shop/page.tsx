@@ -16,7 +16,7 @@ async function getProducts(): Promise<Product[]> {
 		
 		return products.map((product) => {
 			const inventory = inventoryMap.get(product.id);
-			return mergeProductWithInventory(product, inventory);
+			return mergeProductWithInventory(product, inventory ?? null);
 		});
 	} catch (error) {
 		console.error('Error fetching products with inventory:', error);
