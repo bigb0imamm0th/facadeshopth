@@ -1,0 +1,130 @@
+.productCard {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 8px;
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+
+.productImage {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1/1;
+	background: #faf8f5;
+}
+
+.productInfo {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.productName {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #000000;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.productPrice {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #000000;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.categoryTag {
+	display: inline-block;
+	background: #e5e5e5;
+	padding: 0.375rem 0.75rem;
+	border-radius: 20px;
+	font-size: 0.875rem;
+	color: #000000;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	width: fit-content;
+}
+
+.stockInfo {
+	color: #22c55e;
+	font-size: 0.875rem;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.sizeSection {
+	margin-bottom: 0.5rem;
+}
+
+.sizeLabel {
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #000000;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.sizeButtons {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.sizeButton {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 0.875rem;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	background: #e5e5e5;
+	color: #000000;
+}
+
+.sizeButtonSelected {
+	background: #000000;
+	color: #ffffff;
+}
+
+.addToCartButton {
+	width: 100%;
+	padding: 1rem;
+	background: #000000;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 0.875rem;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin-top: 0.5rem;
+	transition: all 0.2s ease;
+}
+
+.addToCartButton:hover:not(:disabled) {
+	background: #333333;
+}
+
+.addToCartButton:disabled,
+.addToCartButtonDisabled {
+	background: #e5e5e5;
+	color: #999999;
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.productImageLink,
+.productNameLink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.productNameLink:hover .productName {
+	text-decoration: underline;
+}
+

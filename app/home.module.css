@@ -1,0 +1,55 @@
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 3rem 2rem;
+	overflow: hidden;
+}
+
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	flex: 1;
+	justify-content: center;
+}
+
+.shopTitle {
+	font-family: var(--font-unifraktur), "Old English Text MT", "Blackletter", serif;
+	font-size: clamp(3rem, 10vw, 5rem);
+	font-weight: normal;
+	color: #000000;
+	letter-spacing: 0.05em;
+	margin: 0;
+	text-align: center;
+}
+
+.productPlaceholders {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.placeholder {
+	width: 250px;
+	height: 300px;
+	background: #e5e5e5;
+	border: none;
+	border-radius: 10px;
+}
+
+.footer {
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	font-size: 0.875rem;
+	color: #000000;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin-top: auto;
+	padding-top: 2rem;
+}
+

@@ -1,0 +1,4 @@
+# Global ignore patterns
+# To explicitly include .env.local, use negation pattern:
+!.env.local
+

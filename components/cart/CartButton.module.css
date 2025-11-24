@@ -1,0 +1,30 @@
+.cartButton {
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	padding: 0;
+	cursor: pointer;
+	font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	font-size: inherit;
+	font-weight: normal;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.cartBadge {
+	background: #ffffff;
+	color: #000000;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1;
+	min-width: 20px;
+}
+

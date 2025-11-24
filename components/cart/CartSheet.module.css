@@ -1,0 +1,28 @@
+.cartItemsGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.emptyCart {
+	color: #000000;
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.cartItemsGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.cartItemsGrid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
+
