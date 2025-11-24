@@ -15,7 +15,7 @@ export async function GET() {
 		// Merge products with their inventory data
 		const productsWithInventory = products.map((product) => {
 			const inventory = inventoryMap.get(product.id);
-			return mergeProductWithInventory(product, inventory);
+			return mergeProductWithInventory(product, inventory ?? null);
 		});
 		
 		return NextResponse.json(productsWithInventory);
